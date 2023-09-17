@@ -1,12 +1,17 @@
 body {
     background-color: #efefef;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
-.dis-inb {
+.dis-inb-header {
     display: inline-block;
+    font-size: 3.6vh;
     vertical-align: middle;
+}
+.dis-inb-header-top {
+    display: inline-block;
+    vertical-align:top;
 }
 .dis-blo {
     display: block;
@@ -27,20 +32,147 @@ header img {
     width: 10vh;
 }
 .header-right{
+    margin-top: 1vh;
     position: absolute;
     top: 3vh;
     right: 3vh;
     height: 5vh;
 }
-
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 550px) {
+    .dis-inb {
+        display: block;
+    }
+    .invisible {
+        color: transparent;
+    }
     .message-attach {
         width: 5vw;
     }
     .message-body {
         font-size: 3.2vh;
-        width: 40vw;
+        font-weight: 100;
+    }
+    .message-subject-body {
         overflow: hidden;
+        white-space: nowrap;
+        width: 40vw;
+    }
+    .message-date {
+        font-size: 3.2vh;
+        margin: 2vh;
+    }
+    .message-subject {
+        font-size: 3.2vh;
+    }
+    .message-list {
+        position: absolute;
+        height: 80vh;
+        left: 15vw;
+        margin-right: 5vw;
+        padding: 1vh;
+        top: 18vh;
+        width: 80vw;
+    }
+    .message-string {
+        height: auto;
+        width: 80vw;
+    }
+    .message-string img {
+        margin: 2vh;
+        max-height: 4vh;
+        max-width: 4vw;
+        vertical-align: middle;
+    }
+    .receipients {
+        font-size: 3.2vh;
+        width: 15vw;
+    }
+    .side-menu {
+        font-size: 3.6vh;
+        position: relative;
+        height: 100%;
+        margin: 2vh;
+        width: 30vw;
+    } 
+}
+
+@media only screen and (min-width: 550px) {
+    .dis-inb {
+        display: block;
+    }
+    .message-attach {
+        width: 5vw;
+    }
+    .message-body {
+        font-size: 3.2vh;
+        font-weight: 100;
+    }
+    .message-subject-body {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 42vw;
+    }
+    .message-date {
+        font-size: 3.2vh;
+        margin: 2vh;
+    }
+    .message-subject {
+        font-size: 3.2vh;
+    }
+    .message-list {
+        position: absolute;
+        height: 80vh;
+        left: 25vw;
+        margin-right: 10vw;
+        padding: 1vh;
+        top: 18vh;
+        width: 70vw;
+    }
+    .message-string {
+        height: auto;
+        width: 70vw;
+    }
+    .message-string img {
+        margin: 2vh;
+        max-height: 4vh;
+        max-width: 4vw;
+        vertical-align: middle;
+    }
+    .receipients {
+        font-size: 3.2vh;
+        width: 15vw;
+    }
+    .side-menu {
+        font-size: 3.6vh;
+        position: relative;
+        height: 100%;
+        margin: 5vh;
+        width: 30vw;
+    } 
+}
+
+@media only screen and (min-width: 800px) {
+    .dis-inb {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .message-attach {
+        width: 5vw;
+    }
+    .message-body {
+        font-size: 3.2vh;
+        font-weight: 100;
+    }
+    .message-subject-body {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 58vw;
+    }
+    .message-date {
+        font-size: 3.2vh;
+    }
+    .message-subject {
+        font-size: 3.2vh;
     }
     .message-list {
         position: absolute;
